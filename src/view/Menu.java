@@ -28,148 +28,54 @@ public class Menu extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jEdukasi = new javax.swing.JPanel();
         edukasi = new javax.swing.JLabel();
-        jskedul = new javax.swing.JPanel();
         skedul = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        jAbout = new javax.swing.JPanel();
         about = new javax.swing.JLabel();
         bgn = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximizedBounds(new java.awt.Rectangle(1010, 670, 670, 670));
-        setMaximumSize(new java.awt.Dimension(1010, 670));
-        setPreferredSize(new java.awt.Dimension(1010, 670));
+        setMaximumSize(new java.awt.Dimension(1152, 840));
+        setPreferredSize(new java.awt.Dimension(1152, 840));
+        setResizable(false);
 
-        jPanel1.setPreferredSize(new java.awt.Dimension(1010, 670));
+        jPanel1.setMinimumSize(new java.awt.Dimension(1152, 840));
+        jPanel1.setPreferredSize(new java.awt.Dimension(1152, 840));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jEdukasi.setBackground(new java.awt.Color(51, 51, 51));
-
-        edukasi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/asset/icon1.png"))); // NOI18N
-        edukasi.setText("jLabel2");
         edukasi.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 edukasiMouseClicked(evt);
             }
         });
+        jPanel1.add(edukasi, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 550, 40, 60));
 
-        javax.swing.GroupLayout jEdukasiLayout = new javax.swing.GroupLayout(jEdukasi);
-        jEdukasi.setLayout(jEdukasiLayout);
-        jEdukasiLayout.setHorizontalGroup(
-            jEdukasiLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jEdukasiLayout.createSequentialGroup()
-                .addGap(33, 33, 33)
-                .addComponent(edukasi, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(34, Short.MAX_VALUE))
-        );
-        jEdukasiLayout.setVerticalGroup(
-            jEdukasiLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jEdukasiLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(edukasi)
-                .addContainerGap(57, Short.MAX_VALUE))
-        );
-
-        jPanel1.add(jEdukasi, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 180, 140, 140));
-
-        jskedul.setBackground(new java.awt.Color(51, 51, 51));
-
-        skedul.setIcon(new javax.swing.ImageIcon(getClass().getResource("/asset/icon3.png"))); // NOI18N
-        skedul.setText("jLabel2");
         skedul.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 skedulMouseClicked(evt);
             }
         });
+        jPanel1.add(skedul, new org.netbeans.lib.awtextra.AbsoluteConstraints(484, 554, 60, 50));
 
-        javax.swing.GroupLayout jskedulLayout = new javax.swing.GroupLayout(jskedul);
-        jskedul.setLayout(jskedulLayout);
-        jskedulLayout.setHorizontalGroup(
-            jskedulLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jskedulLayout.createSequentialGroup()
-                .addGap(33, 33, 33)
-                .addComponent(skedul, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(34, Short.MAX_VALUE))
-        );
-        jskedulLayout.setVerticalGroup(
-            jskedulLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jskedulLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(skedul)
-                .addContainerGap(57, Short.MAX_VALUE))
-        );
-
-        jPanel1.add(jskedul, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 180, 140, 140));
-
-        jPanel2.setBackground(new java.awt.Color(51, 51, 51));
-
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/asset/icon1.png"))); // NOI18N
-        jLabel2.setText("jLabel2");
-
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(33, 33, 33)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(34, Short.MAX_VALUE))
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel2)
-                .addContainerGap(57, Short.MAX_VALUE))
-        );
-
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 390, 140, 140));
-
-        jAbout.setBackground(new java.awt.Color(51, 51, 51));
-
-        about.setIcon(new javax.swing.ImageIcon(getClass().getResource("/asset/icon2.png"))); // NOI18N
-        about.setText("jLabel2");
         about.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 aboutMouseClicked(evt);
             }
         });
+        jPanel1.add(about, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 550, 50, 50));
 
-        javax.swing.GroupLayout jAboutLayout = new javax.swing.GroupLayout(jAbout);
-        jAbout.setLayout(jAboutLayout);
-        jAboutLayout.setHorizontalGroup(
-            jAboutLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jAboutLayout.createSequentialGroup()
-                .addGap(33, 33, 33)
-                .addComponent(about, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(34, Short.MAX_VALUE))
-        );
-        jAboutLayout.setVerticalGroup(
-            jAboutLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jAboutLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(about)
-                .addContainerGap(57, Short.MAX_VALUE))
-        );
-
-        jPanel1.add(jAbout, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 390, 140, 140));
-
-        bgn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/asset/bgn.jpg"))); // NOI18N
-        bgn.setText("jLabel1");
-        jPanel1.add(bgn, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -20, 1050, 710));
+        bgn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/asset/bgn1.png"))); // NOI18N
+        jPanel1.add(bgn, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1150, 820));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1010, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1152, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 670, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 840, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -181,13 +87,14 @@ public class Menu extends javax.swing.JFrame {
 
     private void skedulMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_skedulMouseClicked
         // TODO add your handling code here:
+        skedul s = new skedul();
+        s.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_skedulMouseClicked
 
     private void aboutMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_aboutMouseClicked
         // TODO add your handling code here:
-        skedul s = new skedul();
-        s.setVisible(true);
-        this.dispose();
+        
     }//GEN-LAST:event_aboutMouseClicked
 
     /**
@@ -229,12 +136,7 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JLabel about;
     private javax.swing.JLabel bgn;
     private javax.swing.JLabel edukasi;
-    private javax.swing.JPanel jAbout;
-    private javax.swing.JPanel jEdukasi;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jskedul;
     private javax.swing.JLabel skedul;
     // End of variables declaration//GEN-END:variables
 }
